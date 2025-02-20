@@ -15,6 +15,6 @@ def test_verification(browser_context): #Mensaje de felicidades qal ingresar qal
     page.locator(".sidenavbar__header-mob__toggle > svg").click(timeout=3000)
     page.get_by_role("link", name="Verification").click(timeout=5000)
     expect(page.get_by_text("Congratulations, your account")).to_be_visible()
-    page.screenshot(path="demo.png")
+    page.screenshot(path="demo.png") #Toma un screenshot de la verificacion realizada 
 
     
